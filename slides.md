@@ -3,435 +3,354 @@ theme: seriph
 background: https://source.unsplash.com/collection/94734566/1920x1080
 class: text-center
 highlighter: shiki
-lineNumbers: false
-info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
+lineNumbers: true
+info: >
+  ## Presentation slides for An introduction to Mao Zedong Thought and the
+  theoretical system of socialism with Chinese characteristics
 
-  Learn more at [Sli.dev](https://sli.dev)
+  Powered by [Sli.dev](https://sli.dev)
 drawings:
   persist: false
 transition: slide-left
-title: Welcome to Slidev
+title: 毛泽东思想和中国特色社会主义理论体系概论课前报告
 mdc: true
+aspectRatio: 4/3
 ---
 
-# Welcome to Slidev
+# 毛泽东思想和中国特色社会主义理论体系概论 课前报告
 
-Presentation slides for developers
+小组成员：熊家辉、张金磊、王浚丞、王晓坤
 
-<div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Press Space for next page <carbon:arrow-right class="inline"/>
-  </span>
+<div class="pt-1">
+  <Link to="42">进入思政微课<carbon:arrow-right class="inline"/></Link>
+</div>
+
+<div class="pt-1">
+  <Link to="42">进入读书分享<carbon:arrow-right class="inline"/></Link>
+</div>
+
+<div class="pt-1">
+  <Link to="42">进入时政评议<carbon:arrow-right class="inline"/></Link>
 </div>
 
 <div class="abs-br m-6 flex gap-2">
   <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <carbon:edit />
   </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub" title="Open in GitHub"
+  <a href="https://github.com/ArielHeleneto/mzdgl" target="_blank" alt="GitHub" title="在 GitHub 中打开"
     class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <carbon-logo-github />
   </a>
 </div>
 
 <!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
--->
-
----
-transition: fade-out
----
-
-# What is Slidev?
-
-Slidev is a slides maker and presenter designed for developers, consist of the following features
-
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - theme can be shared and used with npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embedding Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export into PDF, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - anything possible on a webpage
-
-<br>
-<br>
-
-Read more about [Why Slidev?](https://sli.dev/guide/why)
-
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/guide/syntax#embedded-styles
--->
-
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
-<!--
-Here is another comment.
+开场 问候
 -->
 
 ---
 layout: default
 ---
 
-# Table of contents
+# 目录
 
-```html
-<Toc minDepth="1" maxDepth="1"></Toc>
-```
-
-<Toc maxDepth="1"></Toc>
+<Toc maxDepth="2"></Toc>
 
 ---
-transition: slide-up
-level: 2
+layout: cover
 ---
 
-# Navigation
+# 思政微课：中国特色社会主义理论体系的形成
 
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/navigation.html)
-
-## Keyboard Shortcuts
-
-|     |     |
-| --- | --- |
-| <kbd>right</kbd> / <kbd>space</kbd>| next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
-| <kbd>down</kbd> | next slide |
-
-<!-- https://sli.dev/guide/animations.html#click-animations -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-  alt=""
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
-
----
-layout: image-right
-image: https://source.unsplash.com/collection/94734566/1920x1080
----
-
-# Code
-
-Use code snippets and get the highlighting directly![^1]
-
-```ts {all|2|1-6|9|all}
-interface User {
-  id: number
-  firstName: string
-  lastName: string
-  role: string
-}
-
-function updateUser(id: number, update: User) {
-  const user = getUser(id)
-  const newUser = { ...user, ...update }
-  saveUser(id, newUser)
-}
-```
-
-<arrow v-click="[3, 4]" x1="400" y1="420" x2="230" y2="330" color="#564" width="3" arrowSize="1" />
-
-[^1]: [Learn More](https://sli.dev/guide/syntax.html#line-highlighting)
-
-<style>
-.footnotes-sep {
-  @apply mt-20 opacity-10;
-}
-.footnotes {
-  @apply text-sm opacity-75;
-}
-.footnote-backref {
-  display: none;
-}
-</style>
-
----
-
-# Components
-
-<div grid="~ cols-2 gap-4">
-<div>
-
-You can use Vue components directly inside your slides.
-
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
-
-```html
-<Counter :count="10" />
-```
-
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
-
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
-
-</div>
-<div>
-
-```html
-<Tweet id="1390115482657726468" />
-```
-
-<Tweet id="1390115482657726468" scale="0.65" />
-
-</div>
-</div>
-
-<!--
-Presenter note with **bold**, *italic*, and ~~striked~~ text.
-
-Also, HTML elements are valid:
-<div class="flex w-full">
-  <span style="flex-grow: 1;">Left content</span>
-  <span>Right content</span>
-</div>
--->
-
-
----
-class: px-20
----
-
-# Themes
-
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
-
-<div grid="~ cols-2 gap-2" m="-t-2">
-
-```yaml
----
-theme: default
----
-```
-
-```yaml
----
-theme: seriph
----
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true" alt="">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true" alt="">
-
-</div>
-
-Read more about [How to use a theme](https://sli.dev/themes/use.html) and
-check out the [Awesome Themes Gallery](https://sli.dev/themes/gallery.html).
-
----
-preload: false
----
-
-# Animations
-
-Animations are powered by [@vueuse/motion](https://motion.vueuse.org/).
-
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }">
-  Slidev
-</div>
-```
-
-<div class="w-60 relative mt-6">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-square.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-circle.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-triangle.png"
-      alt=""
-    />
-  </div>
-
-  <div
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
-  </div>
-</div>
-
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
-  }
-}
-</script>
-
-<div
-  v-motion
-  :initial="{ x:35, y: 40, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
-
-[Learn More](https://sli.dev/guide/animations.html#motion)
-
+<div class="pt-12">
+  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
+    进入思政微课 <carbon:arrow-right class="inline"/>
+  </span>
 </div>
 
 ---
 
-# LaTeX
+## 中国特色社会主义理论体系的起源
 
-LaTeX is supported out-of-box powered by [KaTeX](https://katex.org/).
+### 国际背景
 
-<br>
+<v-clicks>
 
-Inline $\sqrt{3x-1}+(1+x)^2$
+- 冷战结束与全球化：冷战结束后，国际社会进入了多极化和全球化时代。这为中国提供了更多的国际合作机会，同时也引发了中国在国际事务中的更多参与和责任。
+- 西方资本主义的危机：20世纪80年代末和90年代初，西方资本主义国家出现了一系列经济危机，包括股市崩溃、金融危机和通货膨胀。这使得中国在寻求一种不同的经济和政治模式时受益匪浅。
+- 国际形势发生变化：经济全球化深入发展促使世界各地经济日益紧密联系在一起，科技革命成为综合国力竞争的焦点，科学技术的突飞猛进，极大的推动了世界生产力和人类经济社会的发展，推动世界范围内生产方式，生活方式发生了深刻变化，以改革求和平、谋发展、促合作，逐渐成为全世界人民的普遍愿望。邓小平敏锐地把握了国际形势的重大变化，对时代主题的转换作出了科学判断，明确指出“应当把发展问题提到全人类的高度来认识，要从这个高度去观察问题和解决问题”
 
-Block
-$$ {1|3|all}
-\begin{array}{c}
-
-\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &
-= \frac{4\pi}{c}\vec{\mathbf{j}}    \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
-
-\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
-
-\nabla \cdot \vec{\mathbf{B}} & = 0
-
-\end{array}
-$$
-
-<br>
-
-[Learn more](https://sli.dev/guide/syntax#latex)
+</v-clicks>
 
 ---
 
-# Diagrams
+### 新中国成立初期的社会背景与中国共产党的指导思想探索
 
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
+<v-click>
 
-<div class="grid grid-cols-4 gap-5 pt-4 -mb-6">
+1949年中华人民共和国成立后，中国面临了严重的社会、经济和政治挑战。长期的战争和内战留下了巨大的社会问题，农村土地问题、国民经济崩溃、社会秩序混乱等等都是亟待解决的问题。在这一背景下，中国共产党（中共）领导下的政府和社会各界开始探索适合中国国情的发展道路和治理模式。
 
-```mermaid {scale: 0.5, alt: 'A simple sequence diagram'}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
-```
+</v-click>
 
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
+<v-click>
 
-```mermaid
-mindmap
-  root((mindmap))
-    Origins
-      Long history
-      ::icon(fa fa-book)
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectivness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
-```
+中国共产党在这一时期积极探索社会主义思想和实践，吸取了马克思列宁主义的原理，并将其与中国的实际情况相结合。这一探索包括土地改革、农村合作社运动等一系列政策和实践，旨在解决农村土地问题、改善农村生活，并推动社会主义建设。这些早期的实践奠定了中国特色社会主义理论体系的基础，形成了一系列初步的思想。
 
-```plantuml {scale: 0.7}
-@startuml
+</v-click>
 
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
-}
+---
 
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
-}
+### 毛泽东思想的形成及其对中国特色社会主义理论体系的奠基作用
 
-cloud {
-  [Example 1]
-}
+<v-click>
 
+毛泽东是中国共产党的重要领袖，他的思想对中国特色社会主义的形成起到了关键作用。毛泽东思想是在中国革命和建设的过程中逐步形成的，它强调农村革命和群众运动，提出了农村包围城市、武装斗争、群众路线等原则。
 
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
-}
+</v-click>
 
+<v-click>
 
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
+毛泽东思想在中国革命中的成功实践为中国共产党提供了宝贵的经验，并为中国特色社会主义的理论体系奠定了基础。毛泽东思想的核心理念包括阶级斗争、群众路线、农村包围城市等，这些思想成为中国特色社会主义理论体系的一部分，尤其在初期的社会主义建设中具有重要意义。
 
-@enduml
-```
+</v-click>
 
+<v-click>
+
+中国特色社会主义理论体系的起源可以追溯到新中国成立初期的社会背景和中国共产党的指导思想探索，其中毛泽东思想起到了奠基作用，为后来的理论发展和实践提供了重要的思想支持。这一理论体系在中国的社会主义建设中发挥着关键的指导作用，不断适应中国国情的变化并取得了显著的成就。
+
+</v-click>
+
+---
+
+## 中国特色社会主义理论体系的初步建立
+
+### 邓小平理论
+
+<v-click>
+
+邓小平理论是在20世纪80年代初中国进行改革开放时形成的，它是中国特色社会主义理论体系的重要组成部分。邓小平是中国共产党的杰出领导人，他提出了一系列重要理念和政策，旨在解决中国面临的经济和社会问题，以推动国家的现代化建设。
+邓小平理论的主要内容包括：
+
+</v-click>
+
+<v-click>
+
+社会主义本质：邓小平强调社会主义是中国的根本制度，但也主张经济改革和市场化，以促进生产力的发展。
+
+</v-click>
+
+<v-click>
+
+"发展是硬道理"：这一理念强调经济发展的重要性，认为只有实现经济的现代化，中国才能在国际舞台上立足。
+
+</v-click>
+
+<v-click>
+
+改革开放政策：邓小平提出了一系列改革政策，包括农村家庭联产承包责任制、城市企业的改革和市场化改革，以吸引外资和技术。
+
+</v-click>
+
+<v-click>
+
+四项基本原则：邓小平强调坚守四项基本原则，即坚持社会主义道路、坚持人民民主专政、坚持人民民主专政和坚持马克思列宁主义毛泽东思想。（设置问题：四项基本原则是什么）
+
+</v-click>
+
+<v-click>
+
+一国两制：邓小平提出一国两制的政策，以在香港和澳门回归中国后保持高度自治。
+
+</v-click>
+
+---
+
+### “三个代表”重要思想
+
+<v-click>
+
+“三个代表”重要思想是江泽民21世纪之初提出的，成为中国特色社会主义理论体系的重要组成部分。这一思想强调党要始终代表中国先进社会生产力的发展要求、代表中国社会主义事业的前进方向、代表中国先进文化的前进方向。
+
+</v-click>
+
+<v-click>
+
+“三个代表”重要思想
+
+</v-click>
+
+<v-click>
+
+党的性质：江泽民强调党要代表先进社会生产力的发展要求，这意味着党必须适应经济发展的需要，不断推动改革开放。
+
+</v-click>
+
+<v-click>
+
+社会主义先进性：思想提出党要代表社会主义事业的前进方向，包括维护社会稳定、改善人民生活和建设社会主义法治。
+
+</v-click>
+
+<v-click>
+
+先进文化：党要代表中国先进文化的前进方向，支持文化创新和繁荣，加强文化自信。
+
+</v-click>
+
+<v-click>
+
+邓小平理论的主要意义在于它推动了中国的改革开放和现代化建设，为中国特色社会主义的发展提供了重要的理论基础，同时也保持了社会主义制度和党的领导的稳定性。这一理论在中国的国家建设和国际地位提升中发挥了关键作用。“三个代表”重要思想的提出强调了党的性质、社会主义的发展方向和文化建设，为中国特色社会主义的理论发展提供了新的思想支持。
+
+</v-click>
+
+---
+
+## 中国特色社会主义理论体系的进一步发展
+
+### 科学发展观
+
+<v-click>
+
+科学发展观是中国特色社会主义理论体系中的一个重要理念，它的形成可以追溯到21世纪初。这一观念强调经济发展应当是科学的、综合的、协调的、可持续的，同时也强调了人的全面发展。
+
+</v-click>
+
+<v-click>
+
+中国梦是习近平于2012年提出的概念，它强调中国的民族伟大复兴和人民的幸福生活，是中国特色社会主义理论体系中的一个核心理念。
+中国梦的主要内容包括：实现中华民族伟大复兴：强调中国要实现伟大复兴，成为富强、民主、文明、和谐、美丽的社会主义现代化强国。
+
+</v-click>
+
+<v-clicks>
+
+- 实现中国梦必须走中国道路，这就是中国特色社会主义道路。
+- 实现中国梦必须弘扬中国精神。这就是以爱国主义为核心的民族精神，以改革创新为核心的时代精神。
+- 实现中国梦必须凝聚中国力量，这就是中国各族人民大团结的力量。中国梦是民族的梦。也是每个中国人的梦。
+- 中国梦归根到底是人民的梦，必须紧紧依靠人民来实现，必须不断为人民造福。
+
+</v-clicks>
+
+<v-click>
+
+科学发展观的提出强调了经济增长的质量和可持续性，以及人的全面发展，为中国特色社会主义的发展提供了新的理论指导。中国梦的提出强调了国家发展与人民幸福的统一，鼓舞了中国人民的信心和团结，成为中国特色社会主义理论体系的重要组成部分。中国特色社会主义理论体系的进一步发展包括了科学发展观和中国梦等概念的提出，这些理念在中国的现代化建设和国家发展中发挥着重要作用。
+
+</v-click>
+
+---
+
+## 中国特色社会主义理论体系的完善与创新
+
+### 习近平新时代中国特色社会主义思想
+
+<v-click>
+
+习近平新时代中国特色社会主义思想的核心要义在于它明确了中国特色社会主义进入新时代的历史地位，提出了全面深化改革、全面依法治国、全面从严治党、全面人民建设社会主义五大任务，为中国特色社会主义的全面建设提供了具体指导。
+
+</v-click>
+
+<v-clicks>
+
+- 为中国特色社会主义的全面建设提供了全面指导，强调全面深化改革和全面依法治国，推动中国社会主义事业在各个方面取得更大的发展。
+- 强调党的全面领导和全面从严治党，确保党的高度纯洁性和集中统一领导，维护国家政治稳定和发展。
+- 强调生态文明建设，意味着中国将更加重视环境保护和可持续发展，推动绿色发展和生态文明建设。
+- 强调国际合作和全球治理，突出中国在国际事务中的积极角色，为构建人类命运共同体作出贡献。
+
+</v-clicks>
+
+<v-click>
+
+习近平新时代中国特色社会主义思想的核心要义在于为中国特色社会主义的发展提供了明确的指导，具有重大的历史和战略意义。它在中国的国家建设和国际地位提升中发挥了关键作用。
+
+</v-click>
+
+---
+layout: cover
+---
+
+# 读书分享：《在纪念邓小平同志诞辰110周年座谈会上的讲话》
+
+<div class="pt-12">
+  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
+    进入读书分享 <carbon:arrow-right class="inline"/>
+  </span>
 </div>
 
-[Learn More](https://sli.dev/guide/syntax.html#diagrams)
-
----
-src: ./pages/multiple-entries.md
-hide: false
 ---
 
----
-layout: center
-class: text-center
+## 背景 
+
+<v-click>
+
+8月20日，习近平总书记在纪念邓小平同志诞辰110周年座谈会上发表重要讲话，讲话突出了缅怀、学习、继承三个关键词，表达了对邓小平同志为党、为祖国、为人民建立不朽功勋的深切缅怀，发出了全党学习邓小平同志为党和人民事业不懈奋斗崇高风范的号召，表明了党中央进一步在新的时代条件下把中国特色社会主义事业继续推向前进的坚定决心
+
+</v-click>
+
 ---
 
-# Learn More
+## 邓小平同志的生平
 
-[Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)
+<v-click>
+
+邓小平同志是中国现代历史上的杰出政治家，他的生平和成就非常丰富，强调他在中国历史中的重要地位。他于1904年出生在四川省广安市，成长于一个普通的农村家庭。早年他参与了共产主义运动，成为中国共产党的一员。在长期的革命和战斗中，邓小平展现出卓越的领导才能，特别是在红军长征中表现出色。
+
+</v-click>
+
+<v-click>
+
+在新中国成立后，邓小平担任了多个高级政治职务，包括国务院副总理和中央委员会总书记。他是中国改革开放的主要倡导者之一，提出了一系列政策，如农村改革、城市改革和开放政策，这些政策推动了中国的经济增长和现代化进程。他强调中国特色社会主义，将市场经济与社会主义体制相结合，取得了巨大成功。
+
+</v-click>
+
+<v-click>
+
+邓小平的思想被纳入中国共产党的指导思想，强调党的领导和经济改革。他提出了"一国两制"的方针，实现了香港和澳门的回归，促进国家统一。邓小平被誉为中国现代史上的杰出政治家，对中国历史和政治产生了深刻影响，被尊为伟大领袖之一，他的改革开放政策带动了中国的经济崛起，使中国成为世界第二大经济体。
+
+</v-click>
+
+---
+
+## 重要性
+
+<v-click>
+
+习近平在《在纪念邓小平同志诞辰110周年座谈会上的讲话》中的重要性体现在多个方面：
+
+</v-click>
+
+<v-clicks>
+
+- 继承邓小平思想：这篇讲话强调了对邓小平思想的继承和发展，将邓小平思想视为中国共产党的重要指导思想之一，保持了党内思想统一。
+- 政策指导：习近平在讲话中提出了一系列政策方向和战略，强调改革开放的重要性，以应对当代中国面临的挑战和机遇。这些政策对中国的发展产生深远影响。
+- 政治稳定：强调邓小平的领导对中国的政治稳定和国家统一的重要性，维护党的统一和稳定的国家环境。
+- 国际影响力：邓小平同志是中国现代历史上的杰出政治家，他的思想和政策影响了国际舞台。通过弘扬他的思想，中国向世界展示了其政治和经济领导力。
+- 继承党的传统：习近平的讲话强调了中国共产党对邓小平思想的传承，将其视为党的宝贵财富，为今后的领导决策提供了历史经验和指导。
+
+</v-clicks>
+
+<v-click>
+
+习近平在纪念邓小平的讲话仍然重要，因为它涵盖了多个关键领域，包括政治、经济、国际事务和思想传承，对中国的现代化进程和党的发展具有深远影响。
+
+</v-click>
+
+---
+
+## 个人观点与感想
+
+<v-click>
+
+《在纪念邓小平同志诞辰110座谈会上的讲话》是一份重要的文献，对中国政治和社会发展具有深远的影响。这篇讲话强调了邓小平同志的伟大贡献和中国特色社会主义的重要性。 
+
+</v-click>
+
+<v-click>
+
+他提出的一系列政策，如市场经济改革、开放政策以及"一国两制"等，都为中国的经济增长和国家统一做出了杰出贡献。
+
+</v-click>
+
+<v-click>
+
+此外，这篇讲话还反映了中国共产党对邓小平同志的高度评价和尊敬，将他视为伟大领袖之一。通过纪念邓小平同志的诞辰，强调了他的思想和成就在中国政治历史中的独特地位，也为当前和未来的政策制定提供了重要的参考和指导。
+
+</v-click>
